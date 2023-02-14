@@ -35,3 +35,5 @@ const divide = function (a, b) {
     return "error";
   } else return a / b;
 };
+
+export { operate };
