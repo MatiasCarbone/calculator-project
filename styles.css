@@ -1,5 +1,18 @@
+.all-buttons {
+  display: flex;
+}
+
+.operators {
+  display: grid;
+  grid-template-columns: 50px;
+}
+
+.equals {
+  height: 40px;
+}
+
 .numbers,
-.advanced-buttons {
+.advanced {
   display: grid;
   grid-template-columns: 50px 50px 50px;
 }
