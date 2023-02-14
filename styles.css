@@ -1,0 +1,15 @@
+.numbers,
+.advanced-buttons {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
