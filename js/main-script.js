@@ -1,5 +1,5 @@
 import { operate } from "./operators.js";
 
-let digitOne = null;
-let digitTwo = null;
-let operand = null;
+let operandOne = null;
+let operandTwo = null;
+let operator = null;
