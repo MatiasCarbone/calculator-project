@@ -1,6 +1,20 @@
+@font-face {
+  font-family: "calculator";
+  src: url("fonts/digital-7.ttf");
+}
+
 * {
   box-sizing: border-box;
   /* border: 1px solid black; */
+}
+
+.display {
+  width: 240px;
+  height: 40px;
+  background-color: #b5b5b5;
+  color: #000100;
+  font-size: 40px;
+  font-family: calculator;
 }
 
 .brand {
