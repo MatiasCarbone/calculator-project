@@ -9,7 +9,9 @@ const numericButtons = document.querySelectorAll(".button.white");
 //Listeners for numeric buttons
 numericButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    updateDisplay(button.id);
+    if (displayValue.length < 8) {
+      updateDisplay(button.id);
+    }
   });
 });
 
