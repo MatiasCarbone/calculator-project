@@ -3,21 +3,33 @@
   /* border: 1px solid black; */
 }
 
-h1,
-h2 {
+.brand {
+  width: 364px;
+  height: 40px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 1px solid purple;
+}
+
+.h1,
+.h2 {
   color: #cddfe7;
 }
 
-h2 {
+.h2 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 23px;
   font-weight: 400;
   letter-spacing: -0.08rem;
 }
 
-h1 {
+.h1 {
   font-family: "Roboto Slab", serif;
   font-weight: 900;
+  font-size: 36px;
+  margin-top: -6px;
 }
 
 .solar-panel {
@@ -29,7 +41,7 @@ h1 {
 }
 
 .cell {
-  border: 2px solid #000300;
+  border: 3px solid #000300;
 }
 
 .bottom-half {
