@@ -7,9 +7,9 @@
 }
 
 .button {
-  font-size: 1em;
-  width: 4em;
-  height: 2.5em;
+  font-size: 18px;
+  width: 64px;
+  height: 44px;
   display: flex;
   align-items: top;
   justify-content: left;
@@ -17,6 +17,18 @@
 
   font-family: "Varela Round", sans-serif;
   font-weight: 800;
+  padding: 0px 0px 0px 6px;
+}
+
+/* Special rules for ON/C and . buttons */
+#c {
+  padding-left: 2px;
+}
+
+#dot {
+  padding-left: 8px;
+  line-height: 6px;
+  font-size: 2em;
 }
 
 .operators {
@@ -31,7 +43,7 @@
 .numbers,
 .advanced {
   display: grid;
-  grid-template-columns: 5em 50px 50px;
+  grid-template-columns: 5em 5em 5em;
 }
 
 .white {
