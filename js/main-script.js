@@ -1,10 +1,17 @@
 import { operate } from "./operators.js";
 
-//DOM
-
+//DOM Query selectors
 const display = document.querySelector(".display");
+const numericButtons = document.querySelectorAll(".button.white");
 
 /*-----------------------------------------------------------*/
+
+//Listeners for numeric buttons
+numericButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    updateDisplay(button.id);
+  });
+});
 
 let displayValue = "";
 
@@ -16,6 +23,3 @@ function updateDisplay(digit) {
   displayValue = displayValue + String(digit);
   display.textContent = displayValue;
 }
-
-updateDisplay(7);
-console.log(displayValue);
