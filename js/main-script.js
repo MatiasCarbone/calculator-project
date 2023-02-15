@@ -6,13 +6,18 @@ const numericButtons = document.querySelectorAll(".button.white");
 
 /*-----------------------------------------------------------*/
 
-//Listeners for numeric buttons
+//Populate display when numeric buttons are pressed
 numericButtons.forEach((button) => {
   button.addEventListener("click", () => {
     if (displayValue.length < 8) {
       updateDisplay(button.id);
     }
   });
+});
+
+//Clear display when ON/C is pressed
+document.querySelector("#c").addEventListener("click", () => {
+  clearDisplay();
 });
 
 let displayValue = "";
@@ -23,5 +28,10 @@ let operator = null;
 
 function updateDisplay(digit) {
   displayValue = displayValue + String(digit);
+  display.textContent = displayValue;
+}
+
+function clearDisplay() {
+  displayValue = "";
   display.textContent = displayValue;
 }
