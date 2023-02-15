@@ -3,6 +3,23 @@
   /* border: 1px solid black; */
 }
 
+h1,
+h2 {
+  color: #cddfe7;
+}
+
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: -0.08rem;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
+}
+
 .solar-panel {
   width: 160px;
   height: 44px;
