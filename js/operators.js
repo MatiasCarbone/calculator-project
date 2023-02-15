@@ -1,4 +1,4 @@
-//This script file will containt the functions that do the mathematical operations
+//This script file contains the functions that do the mathematical operations
 
 const operate = function (a, b, operator) {
   switch (operator) {
