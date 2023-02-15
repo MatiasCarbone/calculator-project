@@ -3,6 +3,18 @@
   /* border: 1px solid black; */
 }
 
+.solar-panel {
+  width: 160px;
+  height: 44px;
+  background-color: #181e1c;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cell {
+  border: 2px solid #000300;
+}
+
 .bottom-half {
   display: flex;
   justify-content: center;
