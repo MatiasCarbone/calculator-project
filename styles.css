@@ -1,5 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
 .all-buttons {
   display: flex;
+}
+
+.button {
+  font-size: 1em;
+  width: 4em;
+  height: 2.5em;
+  display: flex;
+  align-items: top;
+  justify-content: left;
+  border: 1px solid blue;
+
+  font-family: "Varela Round", sans-serif;
+  font-weight: 800;
 }
 
 .operators {
@@ -14,7 +31,7 @@
 .numbers,
 .advanced {
   display: grid;
-  grid-template-columns: 50px 50px 50px;
+  grid-template-columns: 5em 50px 50px;
 }
 
 .white {
