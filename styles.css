@@ -41,6 +41,7 @@
   padding: 6px 8px 6px 8px;
   width: 266px;
   background-color: #454d44;
+  box-shadow: inset 2px 2px 2px #000300;
 }
 
 .display {
@@ -170,10 +171,18 @@
   gap: 0px;
 
   border-radius: 5px;
+  outline: 2px solid #16253e;
+
+  filter: drop-shadow(2px 2px 2px #000000bb);
 
   font-family: "Varela Round", sans-serif;
   font-weight: 800;
   padding: 0px 0px 0px 6px;
+}
+
+.button:active {
+  filter: drop-shadow(1px 1px 0px #000000bb);
+  outline: 2px solid #192841;
 }
 
 .dots {
