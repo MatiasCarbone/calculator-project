@@ -154,7 +154,7 @@
 }
 
 .dots {
-  filter: drop-shadow(1px 1px 1px #11111160);
+  filter: drop-shadow(1px 1px 1px #11111140);
   background: none;
   width: 62px;
   height: 20px;
@@ -170,10 +170,17 @@
   color: #f0eff3;
 }
 
-/* Correct the dots for the zero button, which was misaligned */
+.r {
+  color: #c62834;
+}
+
+/* Corrections for buttons with misaligned dots */
 #dots-zero {
-  bottom: -9px;
+  bottom: -10px;
   right: 6px;
+}
+#dots-sqrt {
+  bottom: 9px;
 }
 
 /* Special rules for ON/C = and . buttons */
