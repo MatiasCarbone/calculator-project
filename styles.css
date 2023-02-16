@@ -12,6 +12,13 @@
   list-style: none;
 }
 
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .top-half,
 .bottom-half {
   margin: 0px auto;
