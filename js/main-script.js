@@ -49,6 +49,10 @@ document.querySelector(".equals").addEventListener("click", () => {
 
     let result = operate(operandOne, operandTwo, operator);
 
+    if (String(result).length > 9) {
+      result = "too long";
+    }
+
     clearDisplay();
     clearVariables();
 
