@@ -117,6 +117,9 @@
   position: relative;
   right: 80px;
   border-radius: 2px;
+  border-bottom: 1px solid #000300;
+  border-right: 1px solid #000300;
+  box-shadow: inset 3px 3px 4px #000300;
 }
 
 .cell {
