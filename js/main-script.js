@@ -16,16 +16,15 @@ numericButtons.forEach((button) => {
   });
 });
 
-//Clear display when ON/C is pressed
-document.querySelector("#c").addEventListener("click", () => {
-  clearDisplay();
-  clearVariables();
-});
-
 //Stores operator and display value in variables for computing
 operators.forEach((element) => {
   element.addEventListener("click", () => {
-    if (displayValue != "") {
+    if (operator != null && displayValue != "") {
+      operandOne = operate(operandOne, Number(displayValue), operator);
+      operator = element.id;
+
+      clearDisplay();
+    } else if (displayValue != "") {
       operandOne = Number(displayValue);
       clearDisplay();
 
@@ -36,6 +35,7 @@ operators.forEach((element) => {
   });
 });
 
+//Evaluate expression after pressing '='
 document.querySelector(".equals").addEventListener("click", () => {
   if (displayValue == "69") {
     clearDisplay();
@@ -50,6 +50,12 @@ document.querySelector(".equals").addEventListener("click", () => {
 
     updateDisplay(result);
   }
+});
+
+//Clear display and variables (except for MRC) when ON/C is pressed
+document.querySelector("#c").addEventListener("click", () => {
+  clearDisplay();
+  clearVariables();
 });
 
 let displayValue = "";
