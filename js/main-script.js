@@ -37,7 +37,10 @@ operators.forEach((element) => {
 });
 
 document.querySelector(".equals").addEventListener("click", () => {
-  if (displayValue != "") {
+  if (displayValue == "69") {
+    clearDisplay();
+    updateDisplay("NICE!");
+  } else if (displayValue != "") {
     operandTwo = Number(displayValue);
 
     let result = operate(operandOne, operandTwo, operator);
