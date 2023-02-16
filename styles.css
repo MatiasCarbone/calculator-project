@@ -33,7 +33,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 340px;
+  width: 360px;
   background-color: #062047;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .rectangle {
-  width: 40px;
+  width: 50px;
   height: 80px;
   background-color: #065398;
   border: 3px solid #062047;
@@ -108,6 +108,13 @@
 
 .cell {
   border: 3px solid #000300;
+}
+
+.line {
+  width: 364px;
+  height: 4px;
+  background-color: #062047;
+  margin-top: 20px;
 }
 
 .bottom-half {
