@@ -45,6 +45,9 @@ document.querySelector(".equals").addEventListener("click", () => {
   if (displayValue == "69") {
     clearDisplay();
     updateDisplay("NICE!");
+  } else if (displayValue == "80085") {
+    clearDisplay();
+    updateDisplay("NICE!");
   } else if (operandOne != null || operandTwo != null) {
     operandTwo = Number(displayValue);
 
