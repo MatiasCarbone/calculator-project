@@ -32,7 +32,7 @@ operators.forEach((element) => {
       operator = element.id;
 
       clearDisplay();
-    } else if (displayValue != "") {
+    } else if (displayValue != "" && displayValue != ".") {
       operandOne = Number(displayValue);
       clearDisplay();
 
@@ -110,6 +110,9 @@ let operator = null;
 let memoryValue = 0; //initial memory value
 
 function updateDisplay(digit) {
+  if (digit == "." && displayValue.includes(".")) {
+    return;
+  }
   displayValue = displayValue + String(digit);
   display.textContent = displayValue;
 }
