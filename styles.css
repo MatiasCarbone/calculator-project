@@ -200,10 +200,13 @@
   right: 6px;
 }
 #dots-sqrt {
-  bottom: 9px;
+  bottom: 10px;
 }
 #dots-on {
   right: 1px;
+}
+#dots-minus {
+  bottom: 2px;
 }
 
 /* Special rules for ON/C = and . buttons */
@@ -254,4 +257,11 @@
 .red {
   background-color: #c62834;
   color: #eeeff2;
+}
+
+.minn {
+  font-size: 24px;
+  position: relative;
+  line-height: 18px;
+  letter-spacing: -5px;
 }
