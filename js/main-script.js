@@ -50,6 +50,9 @@ document.querySelector(".equals").addEventListener("click", () => {
     let result = operate(operandOne, operandTwo, operator);
 
     if (String(result).length > 9) {
+      alert(
+        `The result was too long to fit in the screen: \n${operandOne} ${operator} ${operandTwo} = ${result} .`
+      );
       result = "too long";
     }
 
