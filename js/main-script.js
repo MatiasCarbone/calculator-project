@@ -106,6 +106,7 @@ percent.addEventListener("click", () => {
   }
 });
 
+//Recalls number stored in memory and displays it
 mrc.addEventListener("click", () => {
   displayValue = memoryValue;
   display.textContent = displayValue;
