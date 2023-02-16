@@ -154,6 +154,7 @@
 }
 
 .dots {
+  filter: drop-shadow(1px 1px 1px #11111160);
   background: none;
   width: 62px;
   height: 20px;
@@ -163,6 +164,10 @@
   font-size: 22px;
   letter-spacing: 1px;
   line-height: 7px;
+}
+
+.w {
+  color: #f0eff3;
 }
 
 /* Correct the dots for the zero button, which was misaligned */
@@ -212,8 +217,8 @@
 }
 
 .white {
-  background-color: white;
-  color: black;
+  background-color: #f0eff3;
+  color: #031f47;
 }
 
 .red {
