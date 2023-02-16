@@ -171,7 +171,7 @@
 }
 
 .r {
-  color: #c62834;
+  color: #cb2c39;
 }
 
 /* Corrections for buttons with misaligned dots */
@@ -181,6 +181,9 @@
 }
 #dots-sqrt {
   bottom: 9px;
+}
+#dots-on {
+  right: 1px;
 }
 
 /* Special rules for ON/C = and . buttons */
