@@ -11,8 +11,7 @@ const memPlus = document.querySelector("#mplus");
 const memMinus = document.querySelector("#mminus");
 const mrc = document.querySelector("#mrc");
 
-const sqrt = document.querySelector("#sqrt");
-
+const percent = document.querySelector("#percent");
 /*-----------------------------------------------------------*/
 
 //Populate display when numeric buttons are pressed
@@ -93,6 +92,14 @@ memPlus.addEventListener("click", () => {
 memMinus.addEventListener("click", () => {
   if (displayValue != "") {
     memoryValue -= Number(displayValue);
+  }
+});
+
+//Calculate percent
+percent.addEventListener("click", () => {
+  if (displayValue != "" && displayValue != ".") {
+    displayValue = Number(displayValue) / 100;
+    display.textContent = displayValue;
   }
 });
 
