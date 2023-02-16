@@ -11,6 +11,8 @@ const memPlus = document.querySelector("#mplus");
 const memMinus = document.querySelector("#mminus");
 const mrc = document.querySelector("#mrc");
 
+const sqrt = document.querySelector("#sqrt");
+
 /*-----------------------------------------------------------*/
 
 //Populate display when numeric buttons are pressed
@@ -49,11 +51,17 @@ document.querySelector(".equals").addEventListener("click", () => {
 
     let result = operate(operandOne, operandTwo, operator);
 
-    if (String(result).length > 9) {
+    let totalLength = String(result).length;
+    let intLength = String(Math.ceil(result)).length;
+
+    //Round decimals if possible, show an error if number is too long
+    if (intLength > 9) {
       alert(
         `The result was too long to fit in the screen: \n${operandOne} ${operator} ${operandTwo} = ${result} .`
       );
       result = "too long";
+    } else if (intLength < 9 && totalLength > 9) {
+      result = result.toFixed(7 - intLength);
     }
 
     clearDisplay();

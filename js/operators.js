@@ -13,6 +13,9 @@ const operate = function (a, b, operator) {
 
     case "/":
       return divide(a, b);
+
+    case "sqrt":
+      return root(a, b);
   }
 };
 
@@ -34,6 +37,14 @@ const divide = function (a, b) {
   if (b == 0) {
     return "really?";
   } else return a / b;
+};
+
+const root = function (a, b) {
+  if (a < 0) {
+    return "error";
+  }
+
+  return a ** (1 / b);
 };
 
 export { operate };
