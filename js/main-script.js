@@ -28,8 +28,6 @@ operators.forEach((element) => {
       operandOne = Number(displayValue);
       clearDisplay();
 
-      console.log(operandOne);
-
       operator = element.id;
     }
   });

@@ -8,6 +8,11 @@
   /* border: 1px solid black; */
 }
 
+.top-half,
+.bottom-half {
+  margin: 0px auto;
+}
+
 .top-half {
   background-color: #065398;
   display: flex;
