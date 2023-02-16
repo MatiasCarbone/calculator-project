@@ -40,7 +40,7 @@ document.querySelector(".equals").addEventListener("click", () => {
   if (displayValue == "69") {
     clearDisplay();
     updateDisplay("NICE!");
-  } else if (displayValue != "") {
+  } else if (operandOne != null || operandTwo != null) {
     operandTwo = Number(displayValue);
 
     let result = operate(operandOne, operandTwo, operator);
